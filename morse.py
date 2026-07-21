@@ -1,5 +1,3 @@
-import pandas as pd
-
 class Morse():
     def __init__(self):
         self.lista_morse = ['._',
