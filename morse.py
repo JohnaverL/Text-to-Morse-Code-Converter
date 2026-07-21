@@ -1,0 +1,65 @@
+import pandas as pd
+
+class Morse():
+    def __init__(self):
+        self.lista_morse = ['._',
+                 '_...',
+                 '_._.',
+                 '_..',
+                 '.',
+                 '..-.',
+                 '--.',
+                 '....',
+                 '..',
+                 '.---',
+                 '-.-',
+                 '.-..',
+                 '--',
+                 '-.',
+                 '---',
+                 '.--.',
+                 '--.-',
+                 '.-.',
+                 '...',
+                 '-',
+                 '..-',
+                 '...-',
+                 '.--',
+                 '-..-',
+                 '-.--',
+                 '--..',
+                 ]
+        self.lista_abc = [
+            'a',
+            'b',
+            'c',
+            'd',
+            'e',
+            'f',
+            'g',
+            'h',
+            'i',
+            'j',
+            'k',
+            'l',
+            'm',
+            'n',
+            'o',
+            'p',
+            'q',
+            'r',
+            's',
+            't',
+            'u',
+            'v',
+            'w',
+            'x',
+            'y',
+            'z',
+        ]
+        self.diccionario = {}
+
+    def retorno(self):
+        for pos in range(len(self.lista_abc)):
+            self.diccionario[f'{self.lista_abc[pos]}'] = f'{self.lista_morse[pos]}'    
+        return self.diccionario
